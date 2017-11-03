@@ -23,11 +23,6 @@ public class LoginTest {
 	@DataProvider(name = "LoginCredentials")
 	public Object[][] testData() throws Exception {
 
-//	Excel
-		
-	//	Object[][] data = Util.getDataFromExcel(Util.FILE_PATH, Util.SHEET_NAME, Util.TABLE_NAME);
-		
-//Regular
 		
 		Object[][] data = new Object[4][2];
 		
@@ -73,6 +68,7 @@ public class LoginTest {
 				actualBoxMsg = alt.getText(); 
 				alt.accept();
 				assertEquals(actualBoxMsg,Util.EXPECT_ERROR);		
+				System.out.println("________________________________________________");
 				
 			}    
 		    catch (NoAlertPresentException Ex){     	 	
